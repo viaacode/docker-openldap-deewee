@@ -1,0 +1,3 @@
+[submodule "viaa-ldap-schema"]
+	path = viaa-ldap-schema
+	url = https://github.com/viaacode/viaa-ldap-schema.git

@@ -1,0 +1,12 @@
+dn: olcDatabase=bdb,cn=config
+objectClass: olcDatabaseConfig
+objectClass: olcBdbConfig
+olcDatabase: bdb
+olcDbDirectory: /var/lib/ldap/db/dc=hetarchief,dc=be
+olcSuffix: dc=hetarchief,dc=be
+olcDbConfig: {0}set_lg_dir /var/lib/ldap/log/dc=hetarchief,dc=be
+olcSizeLimit: 10000
+olcAccess: {0}to attrs=userPassword,shadowLastChange by anonymous auth by * none
+olcAccess: {1}to attrs=pwmEventLog,pwmResponseSet by self read by * none
+olcAccess: {2}to * by * read
+
